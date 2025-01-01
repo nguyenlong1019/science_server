@@ -1,0 +1,105 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block styles %} 
+
+<style>
+    .header {
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+    
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo {
+        width: auto;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        gap: 8px;
+    }
+
+    .logo img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 4px;
+        overflow: hidden;
+    }
+
+    .logo span {
+        display: inline-block;
+        font-size: 40px;
+        font-weight: bold;
+    }
+
+    .controls-btn {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        gap: 16px;
+    }
+
+    .filter-form {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr 6fr;
+        gap: 12px;
+    }
+
+</style>
+
+{% endblock styles %}
+
+{% block content %}
+
+<header class="header">
+    <div class="navbar container">
+        <a href="#" class="logo">
+            <img src="{% static 'logo.png' %}" alt="logo">
+            <span style="display: flex;align-items: center;justify-content: start;"><span style="color: #990000;">Vi</span><span style="background-color: #000;color: #fff;">Re</span></span>
+        </a>
+        <div class="controls-btn">
+            <a href="#" class="btn btn-outline-primary">Register</a>
+            <a href="#" class="btn btn-primary">Login</a>
+        </div>
+    </div>
+</header>
+
+<section class="container search-section mb-3 mt-3">
+    <h2 class="title-lg text-center">"Discover, Share, and Innovate"</h2>
+    <div class="filter-section">
+        <form action="" class="filter-form">
+            <select class="form-control" name="" id="">
+                <option value="">Topics</option>
+                <option value="">Test</option>
+            </select>
+            <select class="form-control" name="" id="">
+                <option value="">Published Year</option>
+            </select>
+            <select class="form-control" name="" id="">
+                <option value="">Author</option>
+            </select>
+            <div class="input-group">
+                <input class="form-control" type="text" placeholder="Enter for search ...">
+                <div class="btn btn-primary">
+                    <span class="icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </span>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+
+<section class="container document-new-section">
+    <h2 class="title text-center">Recent Documents</h2>
+    
+</section>
+
+{% endblock content %}

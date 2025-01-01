@@ -1,0 +1,40 @@
+Website lưu trữ tài liệu về science, 
+Cho phép học sinh, sinh viên đăng tải các nghiên cứu khoa học (file PDF)
+lên trang web, cho phép người dùng có thể đánh giá, review các bài
+nghiên cứu tài liệu trên trang chủ website 
+
+Các chủ đề nghiên cứu khoa học cần lấy về: 
+Science in Environment, Art, Education 
+
+Tin tức khoa học mới nhất (Lastest Scientific News)
+Định dạng tài liệu (PDF, HTML)
+Ngôn ngữ: tiếng Anh 
+
+Trang chủ: giới thiệu nổi bật các chủ đề chính, bài viết mới nhất,
+và tài liệu nổi bật 
+Trang chi tiết: Hiển thị đầy đủ thông tin nghiên cứu, tóm tắt và link tải tài liệu 
+Thư viện: Bộ lọc và công cụ tìm kiếm mạnh mẽ (theo chủ đề, năm xuất bản và tác giả)
+Dashboard: Cho phép người dùng đăng tải nghiên cứu và quản lý tài khoản 
+
+Đăng ký, đăng nhập (tích hợp google, facebook)
+Phân quyền: người đọc, quản trị viên 
+Chức năng tìm kiếm:
+Bộ lọc theo từ khóa, theo tài liệu 
+Hệ thống quản lý nội dung (CMS):
+Cho phép Admin quản lý và kiểm duyệt bài viết 
+Cho phép tác giả tự đăng bài và theo dõi tình trạng phê duyệt 
+Thống kê và báo cáo:
+Thống kê lượt xem, lượt tải 
+Báo cáo xu hướng đọc tài liệu  
+
+django-allauth 
+login bằng fb, google phải tạo project 
+
+https://developers.facebook.com/apps/?show_reminder=true 
+https://console.home.google.com/projects 
+
+https://studygyaan.com/django/how-to-add-social-login-to-django 
+
+https://developers.facebook.com/apps/1363130935068119/settings/basic/ 
+
+acc: rinnmusic2.2@gmail.com 

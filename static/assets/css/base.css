@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", serif;
+    line-height: 1.4;
+    scroll-behavior: smooth;
+    color: #333;
+}
+
+.container {
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.btn {
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 3px;
+    border: 2px solid #ddd;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.form-control {
+    padding: 8px 16px;
+    border: 2px solid #ccc;
+    font-size: 16px;
+    background-color: transparent;
+    display: block;
+    width: 100%;
+    outline-color: #888;
+}
+
+option {
+    background-color: transparent !important;
+    color: #222 !important;
+    padding: 10px !important;
+    border-radius: 0;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 16px;
+}
+
+.btn-primary {
+    background-color: #990000;
+    color: #fff;
+}
+
+.btn-outline-primary {
+    background-color: #fff;
+    color: #000;
+    
+}
+
+.title-lg {
+    font-size: 48px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.mb-3 {
+    margin-bottom: 24px;
+}
+
+.mt-3 {
+    margin-top: 24px;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon i {
+    font-size: 16px;
+    color: #fff;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+
+@media (max-width: 992px) {
+
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}
+
+@media (max-width: 576px) {
+
+}
