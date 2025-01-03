@@ -13,6 +13,11 @@
     margin: 0 auto;
 }
 
+.container-sm {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
 a {
     display: inline-block;
     text-decoration: none;
@@ -63,6 +68,13 @@ option {
     
 }
 
+.title {
+    font-size: 28px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
 .title-lg {
     font-size: 48px;
     color: #333;
@@ -104,7 +116,33 @@ option {
 .card .card-img {
     width: 100%;
     height: 224px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card .card-img-2 {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card .card-img-2 img {
+    width: auto;
+    height: 100%;
     object-fit: cover;
+    border-radius: 4px;
+}
+
+.card .card-img img {
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
 }
 
 .card .card-content {
@@ -112,15 +150,66 @@ option {
 }
 
 .card .card-content .card-title {
-    font-size: 16px;
+    font-size: 19px;
     color: #222;
     font-weight: bold;
+    margin-bottom: 12px;
 }
 
-.card .card-content .p {
+.card .card-content p:not(.doc-topic) {
     font-size: 14px;
     color: #333;
     font-weight: 500;
+    margin-bottom: 12px;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.justify-content-start {
+    justify-content: start;
+}
+
+.g-6 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 16px;
+}
+
+.g-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
+}
+
+.author {
+    display: inline-block;
+    color: #222;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.time {
+    display: inline-block;
+    color: #333;
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 12px;
+
+}
+
+.doc-topic {
+    color: #676765;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 8px;
+    text-transform: uppercase;
 }
 
 @media (max-width: 1200px) {
@@ -128,10 +217,21 @@ option {
         padding-left: 16px;
         padding-right: 16px;
     }
+
+    .g-6 {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
 }
 
 @media (max-width: 992px) {
+    .g-6 {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 
+    .container-sm {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -139,8 +239,33 @@ option {
         padding-left: 24px;
         padding-right: 24px;
     }
+
+    .container-sm {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .g-6 {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 @media (max-width: 576px) {
+    .g-6 {
+        grid-template-columns: 1fr;
+    }
 
+    .g-6 .card:nth-child(n+4) {
+        display: none;
+    }
+
+    .doc-topic {
+        text-align: center;
+    }
+}
+
+@media (max-width: 380px) {
+    .register-btn {
+        display: none;
+    }
 }
